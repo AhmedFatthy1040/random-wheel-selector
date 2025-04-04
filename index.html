@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Wheel Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Wheel Selector</h1>
+        
+        <div class="wheel-container">
+            <canvas id="wheel" width="400" height="400"></canvas>
+            <div class="spinner"></div>
+        </div>
+        
+        <div class="controls">
+            <button id="spin-btn" class="btn">SPIN</button>
+            <div class="result">
+                <p id="selected-value">Add some values and spin the wheel!</p>
+            </div>
+            
+            <div class="input-container">
+                <input type="text" id="new-item" placeholder="Add a new item">
+                <button id="add-btn" class="btn">Add to Wheel</button>
+            </div>
+            
+            <div class="items-container">
+                <h3>Current Items:</h3>
+                <ul id="items-list"></ul>
+                <button id="clear-btn" class="btn btn-danger">Clear All</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
